@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frozen by Veer - Premium ice cream shop with a variety of delicious flavors. Discover our creamy, delicious ice creams crafted to bring joy to every scoop."
+    />
+    <meta
+      name="keywords"
+      content="ice cream, dessert, premium ice cream, Frozen by Veer, sweet treats"
+    />
+    <meta name="author" content="Frozen by Veer" />
+    <meta name="theme-color" content="#ed8613" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iceworld.com/" />
+    <meta
+      property="og:title"
+      content="Frozen by Veer - Premium Ice Cream Shop"
+    />
+    <meta
+      property="og:description"
+      content="Discover creamy, delicious ice creams crafted to bring joy to every scoop. Welcome to your sweet escape!"
+    />
+    <meta property="og:image" content="assets/header.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://iceworld.com/" />
+    <meta
+      property="twitter:title"
+      content="Frozen by Veer - Premium Ice Cream Shop"
+    />
+    <meta
+      property="twitter:description"
+      content="Discover creamy, delicious ice creams crafted to bring joy to every scoop. Welcome to your sweet escape!"
+    />
+    <meta property="twitter:image" content="assets/header.png" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <!-- Preload and stylesheet for Google Fonts Poppins with font-display swap -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    /></noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/popular-1.png" />
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frozen by Veer - Premium Ice Cream Shop</title>
+  </head>
+  <body>
+    <!-- Top Zoom Recommendation Banner -->
+    <div class="zoom-banner">
+      <i class="ri-zoom-in-line"></i>
+      <p>
+        For best viewing experience on larger screens, set zoom to
+        <strong>75%</strong>
+      </p>
+      <button
+        class="zoom-banner-close"
+        id="zoom-banner-close"
+        aria-label="Close zoom recommendation"
+      >
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+      <div class="loader">
+        <div class="ice-cream">
+          <div class="scoop"></div>
+          <div class="cone"></div>
+        </div>
+        <p>Loading Frozen by Veer...</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="#" class="logo">Frozen<span>by Veer</span></a>
+        </div>
+
+        <div class="nav__menu">
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__btns">
+          <button
+            class="nav__cart__btn"
+            id="cart-btn"
+            role="button"
+            aria-label="Open shopping cart"
+          >
+            <i class="ri-shopping-cart-line"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button
+            class="nav__theme-toggle"
+            id="theme-toggle"
+            role="button"
+            aria-label="Toggle dark mode"
+          >
+            <i class="ri-sun-line" id="theme-icon"></i>
+          </button>
+          <button
+            class="nav__menu__btn"
+            id="menu-btn"
+            role="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+          >
+            <i class="ri-menu-3-line"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1>WELCOME TO OUR <span>ICE CREAM</span> WORLD</h1>
+          <p>
+            Indulge in a delightful journey of flavors! Discover creamy,
+            delicious ice creams crafted to bring joy to every scoop. Welcome to
+            your sweet escape!
+          </p>
+          <div class="hero__btn">
+            <button class="btn">Buy Now</button>
+          </div>
+          <ul class="socials">
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><i class="ri-facebook-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Pinterest"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Contact"><i class="ri-phone-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__image">
+          <picture>
+            <source srcset="assets/header.webp" type="image/webp" />
+            <source srcset="assets/header.png" type="image/png" />
+            <img
+              src="assets/header.png"
+              alt="Premium Ice Cream Selection"
+              width="675"
+              height="675"
+              loading="eager"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <!-- Popular Ice Cream Section -->
+    <section class="section__container" id="menu">
+      <div class="section__header-wrapper">
+        <h2 class="section__header">Popular Ice-Cream</h2>
+        <div class="section__header-line"></div>
+      </div>
+      <div class="popular__grid">
+        <div
+          class="popular__card"
+          data-item-id="mango-tango"
+          data-item-name="Mango Tango Sorbet"
+          data-item-price="5.49"
+          data-item-image="assets/popular-1.png"
+        >
+          <picture>
+            <source srcset="assets/popular-1.webp" type="image/webp" />
+            <source srcset="assets/popular-1.png" type="image/png" />
+            <img
+              src="assets/popular-1.png"
+              alt="Mango Tango Sorbet"
+              width="250"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <div class="popular__card__content">
+            <h4>Mango Tango Sorbet</h4>
+            <div class="price">$5.49</div>
+            <button class="popular__btn add-to-cart-btn">Add to Cart</button>
+            <div class="product-coupons">
+              <button type="button" class="coupon-chip" data-coupon="MANGO15">
+                MANGO15
+              </button>
+              <button type="button" class="coupon-chip" data-coupon="FRESH25">
+                FRESH25
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="popular__card"
+          data-item-id="chocolate-fudge"
+          data-item-name="Chocolate Fudge Delight"
+          data-item-price="5.99"
+          data-item-image="assets/popular-2.png"
+        >
+          <picture>
+            <source srcset="assets/popular-2.webp" type="image/webp" />
+            <source srcset="assets/popular-2.png" type="image/png" />
+            <img
+              src="assets/popular-2.png"
+              alt="Chocolate Fudge Delight"
+              width="250"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <div class="popular__card__content">
+            <h4>Chocolate Fudge Delight</h4>
+            <div class="price">$5.99</div>
+            <button class="popular__btn add-to-cart-btn">Add to Cart</button>
+            <div class="product-coupons">
+              <button type="button" class="coupon-chip" data-coupon="CHOCO20">
+                CHOCO20
+              </button>
+              <button type="button" class="coupon-chip" data-coupon="SWEET30">
+                SWEET30
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="popular__card"
+          data-item-id="strawberry-swirl"
+          data-item-name="Strawberry Swirl Bliss"
+          data-item-price="4.99"
+          data-item-image="assets/popular-3.png"
+        >
+          <picture>
+            <source srcset="assets/popular-3.webp" type="image/webp" />
+            <source srcset="assets/popular-3.png" type="image/png" />
+            <img
+              src="assets/popular-3.png"
+              alt="Strawberry Swirl Bliss"
+              width="250"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <div class="popular__card__content">
+            <h4>Strawberry Swirl Bliss</h4>
+            <div class="price">$4.99</div>
+            <button class="popular__btn add-to-cart-btn">Add to Cart</button>
+            <div class="product-coupons">
+              <button type="button" class="coupon-chip" data-coupon="BERRY10">
+                BERRY10
+              </button>
+              <button type="button" class="coupon-chip" data-coupon="ICE10">
+                ICE10
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Selling Ice Cream Section -->
+    <section class="section__container discover__container" id="categories">
+      <div class="section__header-wrapper">
+        <h2 class="section__header">Most Selling Ice-Cream</h2>
+        <div class="section__header-line"></div>
+      </div>
+      <p class="section__description">
+        Discover our crowd favorites! These ice creams are loved by everyone and
+        have become the top picks for their irresistible flavors and creamy
+        textures.
+      </p>
+      <div class="discover__grid">
+        <div
+          class="discover__card"
+          data-item-id="double-chocolate"
+          data-item-name="Double Chocolate Crunch"
+          data-item-price="6.99"
+          data-item-image="assets/discover-1.jpg"
+        >
+          <div class="discover__card-image">
+            <picture>
+              <source srcset="assets/discover-1.webp" type="image/webp" />
+              <source srcset="assets/discover-1.jpg" type="image/jpeg" />
+              <img
+                src="assets/discover-1.jpg"
+                alt="Double Chocolate Crunch"
+                width="350"
+                height="350"
+                loading="lazy"
+              />
+            </picture>
+            <div class="discount-tag">-30%</div>
+          </div>
+          <div class="discover__card__content">
+            <h4>Double Chocolate Crunch</h4>
+            <p class="section__description">
+              Dive into a chocolate lover's paradise with our Double Chocolate
+              Crunch. This rich and creamy ice cream is made with premium cocoa
+              and blended with crunchy chocolate chunks to deliver a perfect
+              balance of smoothness and texture.
+            </p>
+            <div class="discover__price">
+              <div class="current-price">$6.99</div>
+              <div class="original-price">$9.99</div>
+            </div>
+            <div class="discover__card__btn">
+              <button class="btn add-to-cart-btn">Buy Now</button>
+              <div class="product-coupons">
+                <button
+                  type="button"
+                  class="coupon-chip"
+                  data-coupon="CRUNCH22"
+                >
+                  CRUNCH22
+                </button>
+                <button type="button" class="coupon-chip" data-coupon="CHOCO35">
+                  CHOCO35
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="discover__card"
+          data-item-id="strawberry-cheesecake"
+          data-item-name="Strawberry Cheesecake Bliss"
+          data-item-price="5.99"
+          data-item-image="assets/discover-2.jpg"
+        >
+          <div class="discover__card__content">
+            <h4>Strawberry Cheesecake Bliss</h4>
+            <p class="section__description">
+              Experience the perfect harmony of fruity and creamy with our
+              Strawberry Cheesecake Bliss. Every spoonful feels like enjoying a
+              slice of fresh strawberry cheesecake, making it an irresistible
+              dessert.
+            </p>
+            <div class="discover__price">
+              <div class="current-price">$5.99</div>
+              <div class="original-price">$8.99</div>
+            </div>
+            <div class="discover__card__btn">
+              <button class="btn add-to-cart-btn">Buy Now</button>
+              <div class="product-coupons">
+                <button
+                  type="button"
+                  class="coupon-chip"
+                  data-coupon="CHEESE15"
+                >
+                  CHEESE15
+                </button>
+                <button
+                  type="button"
+                  class="coupon-chip"
+                  data-coupon="STRAWB28"
+                >
+                  STRAWB28
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="discover__card-image">
+            <picture>
+              <source srcset="assets/discover-2.webp" type="image/webp" />
+              <source srcset="assets/discover-2.jpg" type="image/jpeg" />
+              <img
+                src="assets/discover-2.jpg"
+                alt="Strawberry Cheesecake Bliss"
+                width="350"
+                height="350"
+                loading="lazy"
+              />
+            </picture>
+            <div class="discount-tag">-33%</div>
+          </div>
+        </div>
+        <div
+          class="discover__card"
+          data-item-id="cookies-cream"
+          data-item-name="Classic Cookies and Cream"
+          data-item-price="5.49"
+          data-item-image="assets/discover-3.jpg"
+        >
+          <div class="discover__card-image">
+            <picture>
+              <source srcset="assets/discover-3.webp" type="image/webp" />
+              <source srcset="assets/discover-3.jpg" type="image/jpeg" />
+              <img
+                src="assets/discover-3.jpg"
+                alt="Classic Cookies and Cream"
+                width="350"
+                height="350"
+                loading="lazy"
+              />
+            </picture>
+            <div class="discount-tag">-48%</div>
+          </div>
+          <div class="discover__card__content">
+            <h4>Classic Cookies and Cream</h4>
+            <p class="section__description">
+              Savor the timeless charm of our Classic Cookies and Cream ice
+              cream. Made with velvety smooth vanilla ice cream, it is
+              generously packed with chunks of chocolate cookies to create a
+              delightful crunch in every bite.
+            </p>
+            <div class="discover__price">
+              <div class="current-price">$5.49</div>
+              <div class="original-price">$10.49</div>
+            </div>
+            <div class="discover__card__btn">
+              <button class="btn add-to-cart-btn">Buy Now</button>
+              <div class="product-coupons">
+                <button
+                  type="button"
+                  class="coupon-chip"
+                  data-coupon="COOKIE20"
+                >
+                  COOKIE20
+                </button>
+                <button
+                  type="button"
+                  class="coupon-chip"
+                  data-coupon="CLASSIC25"
+                >
+                  CLASSIC25
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner__content">
+        <div class="section__header-wrapper">
+          <h2 class="section__header">
+            Get Yummy Ice-Cream at a Reasonable Price
+          </h2>
+          <div class="section__header-line"></div>
+        </div>
+        <p class="section__description">
+          Treat yourself to delightful ice creams without breaking the bank!
+          Enjoy premium quality and mouthwatering flavors at prices that make
+          every scoop worth it.
+        </p>
+
+        <div class="price-highlight">
+          <div class="price-box">
+            <span class="current-price">$5.49</span>
+            <span class="original-price">$10.49</span>
+            <span class="discount-badge">-48%</span>
+          </div>
+          <button class="btn highlight-btn">Buy Now</button>
+        </div>
+
+        <div class="banner__flex">
+          <div class="banner__card">
+            <picture>
+              <source srcset="assets/banner-1.webp" type="image/webp" />
+              <source srcset="assets/banner-1.png" type="image/png" />
+              <img
+                src="assets/banner-1.png"
+                alt="Fresh & Natural"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </picture>
+            <h4>Fresh & Natural</h4>
+          </div>
+          <div class="banner__card">
+            <picture>
+              <source srcset="assets/banner-2.webp" type="image/webp" />
+              <source srcset="assets/banner-2.png" type="image/png" />
+              <img
+                src="assets/banner-2.png"
+                alt="Quick Packaging"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </picture>
+            <h4>Quick Packaging</h4>
+          </div>
+          <div class="banner__card">
+            <picture>
+              <source srcset="assets/banner-3.webp" type="image/webp" />
+              <source srcset="assets/banner-3.png" type="image/png" />
+              <img
+                src="assets/banner-3.png"
+                alt="Fast Delivery"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </picture>
+            <h4>Fast Delivery</h4>
+          </div>
+        </div>
+      </div>
+      <div class="banner__image">
+        <picture>
+          <source srcset="assets/banner.webp" type="image/webp" />
+          <source srcset="assets/banner.jpg" type="image/jpeg" />
+          <img
+            src="assets/banner.jpg"
+            alt="Premium Ice Cream Collection"
+            width="600"
+            height="400"
+            class="banner-display-image"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="section__container reviews__container">
+      <div class="section__header-wrapper">
+        <h2 class="section__header">What Our Customers Say</h2>
+        <div class="section__header-line"></div>
+      </div>
+      <p class="section__description">
+        Our customers love our ice cream! See what they have to say about their
+        experience and favorite flavors.
+      </p>
+
+      <div class="reviews__slider" id="reviews-slider">
+        <div class="review__card">
+          <div class="review__rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <p class="review__text">
+            "The Chocolate Fudge Delight is absolutely amazing! Creamy texture
+            with the perfect amount of sweetness. Frozen by Veer has become my
+            go-to place for dessert!"
+          </p>
+          <div class="review__profile">
+            <div class="review__avatar">
+              <i class="ri-user-fill"></i>
+            </div>
+            <div class="review__info">
+              <h4>Sarah Johnson</h4>
+              <p>Regular Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__card">
+          <div class="review__rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </div>
+          <p class="review__text">
+            "I tried the Strawberry Cheesecake Bliss and it was divine! The
+            flavor combination is perfect and the service is always friendly.
+            Highly recommend!"
+          </p>
+          <div class="review__profile">
+            <div class="review__avatar">
+              <i class="ri-user-fill"></i>
+            </div>
+            <div class="review__info">
+              <h4>Michael Thompson</h4>
+              <p>Ice Cream Enthusiast</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__card">
+          <div class="review__rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <p class="review__text">
+            "The Mango Tango Sorbet is a refreshing treat on hot days! The
+            flavors are natural and not too sweet. My family loves coming here
+            every weekend."
+          </p>
+          <div class="review__profile">
+            <div class="review__avatar">
+              <i class="ri-user-fill"></i>
+            </div>
+            <div class="review__info">
+              <h4>Emily Rodriguez</h4>
+              <p>Loyal Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Review Form -->
+      <div class="add-review-section">
+        <h3>Share Your Experience</h3>
+        <form class="review-form" id="review-form">
+          <div class="form-group">
+            <label for="reviewer-name">Your Name</label>
+            <input type="text" id="reviewer-name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="review-rating">Rating</label>
+            <div class="rating-input">
+              <input type="radio" id="star5" name="rating" value="5" required />
+              <label for="star5"><i class="ri-star-fill"></i></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4"><i class="ri-star-fill"></i></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3"><i class="ri-star-fill"></i></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2"><i class="ri-star-fill"></i></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1"><i class="ri-star-fill"></i></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="review-text">Your Review</label>
+            <textarea
+              id="review-text"
+              name="text"
+              rows="4"
+              required
+              placeholder="Tell us about your experience..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="section__container subscribe__container" id="contact">
+      <div class="subscribe__content">
+        <div class="section__header-wrapper">
+          <h2 class="section__header">Subscribe For Discounts</h2>
+          <div class="section__header-line"></div>
+        </div>
+        <p class="section__description">
+          Don't miss out on sweet deals! Subscribe now to receive exclusive
+          discounts and updates on our latest ice cream flavors and special
+          offers.
+        </p>
+        <form action="#" method="POST" onsubmit="return validateForm(event)">
+          <input
+            type="email"
+            placeholder="Type Your Email"
+            required
+            aria-label="Email subscription"
+            id="email-input"
+          />
+          <button
+            class="btn"
+            type="submit"
+            aria-label="Subscribe to newsletter"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__col">
+            <a href="#" class="logo">Frozen<span>by Veer</span></a>
+            <p class="footer__description">
+              Bringing joy and sweetness to every scoop since 2010. Our premium
+              ice creams are made with the finest ingredients and crafted with
+              love.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h3>Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Contact Us</h3>
+            <ul class="footer__contact">
+              <li>
+                <i class="ri-map-pin-line"></i>
+                <span>123 Ice Cream Lane, Frosty City, FC 12345</span>
+              </li>
+              <li>
+                <i class="ri-phone-line"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li>
+                <i class="ri-mail-line"></i>
+                <span>info@iceworld.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Follow Us</h3>
+            <ul class="socials">
+              <li>
+                <a href="#" aria-label="Facebook"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Twitter"
+                  ><i class="ri-twitter-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Instagram"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Pinterest"
+                  ><i class="ri-pinterest-line"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="footer__newsletter">
+              <h4>Download Our App</h4>
+              <div class="app-buttons">
+                <a href="#" class="app-btn" aria-label="Download on App Store">
+                  <i class="ri-apple-fill"></i> App Store
+                </a>
+                <a href="#" class="app-btn" aria-label="Get it on Google Play">
+                  <i class="ri-google-play-fill"></i> Google Play
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          <p>Copyright 2023 Frozen by Veer. All rights reserved.</p>
+          <ul class="footer__bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-overlay" id="cart-overlay"></div>
+      <div class="cart-container">
+        <div class="cart-header">
+          <h3>Shopping Cart</h3>
+          <button class="cart-close" id="cart-close" aria-label="Close cart">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-coupon">
+          <div class="coupon-input">
+            <input
+              type="text"
+              id="coupon-code"
+              placeholder="Enter coupon code"
+              maxlength="10"
+            />
+            <button type="button" id="apply-coupon" class="btn">Apply</button>
+          </div>
+          <div class="coupon-message" id="coupon-message"></div>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-summary">
+            <div class="cart-subtotal">
+              <span>Subtotal:</span>
+              <span class="cart-subtotal-price" id="cart-subtotal-price"
+                >$0.00</span
+              >
+            </div>
+            <div class="cart-discount" id="cart-discount" style="display: none">
+              <span>Discount:</span>
+              <span class="cart-discount-amount" id="cart-discount-amount"
+                >-$0.00</span
+              >
+            </div>
+            <div class="cart-total">
+              <span>Total:</span>
+              <span class="cart-total-price" id="cart-total-price">$0.00</span>
+            </div>
+          </div>
+          <button class="btn cart-checkout-btn" id="cart-checkout-btn">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
